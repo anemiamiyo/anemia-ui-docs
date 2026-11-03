@@ -1,1 +1,0 @@
-import{P as i,Q as s,s as e}from"./index-TRaeHBCl.js";function r(c,t){i(()=>{const o=s(c);document.title=o===e.name?`${e.name} · Vue 3 组件库`:`${o} · ${e.name}`;const a=t?s(t):void 0;if(a){const n=document.querySelector('meta[name="description"]');n&&(n.content=a)}})}export{r as u};
