@@ -1,0 +1,1 @@
+import{u as s}from"./useCssVar-QxhC0kI7.js";import{d as n,o as a,c,u as t,t as r,_ as p}from"./index-Ca4HbeWz.js";const l=["title"],u=n({__name:"TokenValue",props:{token:{}},setup(e){const o=s(e.token);return(i,k)=>(a(),c("code",{class:"token-value",title:`${e.token}: ${t(o)}`},r(t(o)||"—"),9,l))}}),d=p(u,[["__scopeId","data-v-686fb47b"]]);export{d as T};
