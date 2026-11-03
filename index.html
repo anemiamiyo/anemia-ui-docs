@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/anemia-ui-docs/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anemia UI 是一个安静、克制、为长期维护而设计的 Vue 3 UI 组件库。包含完整设计 Token、双主题与 TypeScript 类型。"
+    />
+    <meta name="theme-color" content="#f7f8fa" />
+    <title>Anemia UI · Vue 3 组件库</title>
+    <script>
+      // Apply the stored/system theme before first paint to avoid a flash.
+      ;(() => {
+        try {
+          const key = 'anemia-ui-theme'
+          const stored = window.localStorage.getItem(key) || 'system'
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const resolved =
+            stored === 'system'
+              ? prefersDark
+                ? 'dark'
+                : 'light'
+              : stored === 'dark'
+                ? 'dark'
+                : 'light'
+          document.documentElement.dataset.theme = resolved
+          document.documentElement.style.colorScheme = resolved
+        } catch {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/anemia-ui-docs/assets/index-D9yVp7QC.js"></script>
+    <link rel="stylesheet" crossorigin href="/anemia-ui-docs/assets/index-Bi_nI1oN.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
